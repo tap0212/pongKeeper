@@ -7,12 +7,12 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new Dotenv({
-      path: path.resolve(__dirname, '..', './.env.development'),
-    }),
+      path: path.resolve(__dirname, '..', './.env.development')
+    })
   ],
   devServer: {
     contentBase: path.resolve(__dirname, '..', './dist'),
-    hot: true,
+    hot: true
   },
-  devtool: 'eval-source-map',
+  devtool: 'eval-source-map'
 };
