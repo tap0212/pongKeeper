@@ -6,18 +6,23 @@ import { PersistGate } from 'redux-persist/integration/react';
 import history from './utils/history';
 
 import App from './containers/app';
+import ErrorBoundary from './components/ErrorBoundary';
+
 import configureStore from './configureStore';
 // Create redux store with history
 const initialState = {};
 const { store, persistor } = configureStore(initialState, history);
 ReactDOM.render(
-  <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}>
-      <ConnectedRouter history={history}>
-        <App />
-      </ConnectedRouter>
-    </PersistGate>
-  </Provider>,
+  <ErrorBoundary>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <ConnectedRouter history={history}>
+          <App />
+        </ConnectedRouter>
+      </PersistGate>
+    </Provider>
+  </ErrorBoundary>,
+
   document.getElementById('app')
 );
 
