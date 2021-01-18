@@ -9,22 +9,22 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
-      },
-    ],
+        use: ['babel-loader']
+      }
+    ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx']
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'pongKeeper',
-      template: path.resolve(__dirname, '..', './src/index.html'),
-    }),
+      template: path.resolve(__dirname, '..', './src/index.html')
+    })
   ],
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
-    filename: 'bundle.js',
-  },
+    filename: 'bundle.js'
+  }
 };
