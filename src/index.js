@@ -9,7 +9,6 @@ import Keeper from './containers/Keeper/Loadable';
 import ErrorBoundary from './components/ErrorBoundary';
 
 import configureStore from './configureStore';
-import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 
 // Create redux store with history
 const initialState = {};
