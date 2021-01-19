@@ -1,7 +1,8 @@
 # PongKeeper
-
-![PongKeeper CI](https://github.com/tap0212/pongKeeper/workflows/pongKeeperCI/badge.svg)
 ### Visit the deployed version [here](https://tap0212.github.io/pongKeeper)
+![](https://github.com/tap0212/pongKeeper/blob/master/screen1.png)
+![](https://github.com/tap0212/pongKeeper/blob/master/screen2.png)
+
 ### To run the application locally for the first time use following command
 - `yarn && yarn start`
 ## Global state management using reduxSauce
