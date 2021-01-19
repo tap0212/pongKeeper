@@ -1,4 +1,4 @@
-name: pongKeeper CD
+name: Pong Keeper CD
 on:
   push:
     branches: [ master ]
