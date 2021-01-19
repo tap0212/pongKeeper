@@ -1,4 +1,7 @@
 # PongKeeper
+![Pong Keeper CI](https://github.com/tap0212/pongKeeper/workflows/Pong%20Keeper%20CI/badge.svg)
+![Pong Keeper CD](https://github.com/tap0212/pongKeeper/workflows/Pong%20Keeper%20CD/badge.svg)
+
 ### Visit the deployed version [here](https://tap0212.github.io/pongKeeper)
 ![](https://github.com/tap0212/pongKeeper/blob/master/screen1.png)
 ![](https://github.com/tap0212/pongKeeper/blob/master/screen2.png)
