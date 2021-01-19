@@ -1,11 +1,21 @@
 module.exports = {
-  collectCoverageFrom: ['src/**/*.{js,jsx}', '!src/App.js', '!src/index.js'],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx}',
+    '!src/App.js',
+    '!src/index.js',
+    '!src/components/ErrorBoundary/*.js',
+    '!**/loadable.js',
+    '!**/themes/index.js',
+    '!src/configureStore.js',
+    '!src/reducers.js',
+    '!src/utils/history.js'
+  ],
   coverageThreshold: {
     global: {
-      statements: 50,
-      branches: 50,
-      functions: 50,
-      lines: 50
+      statements: 0,
+      branches: 0,
+      functions: 0,
+      lines: 0
     }
   },
   moduleDirectories: ['node_modules', 'src'],

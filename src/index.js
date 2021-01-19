@@ -5,10 +5,12 @@ import { ConnectedRouter } from 'connected-react-router';
 import { PersistGate } from 'redux-persist/integration/react';
 import history from './utils/history';
 
-import App from './containers/app';
+import App from './containers/app/Loadable';
 import ErrorBoundary from './components/ErrorBoundary';
 
 import configureStore from './configureStore';
+import '!file-loader?name=[name].[ext]!./images/favicon.ico';
+
 // Create redux store with history
 const initialState = {};
 const { store, persistor } = configureStore(initialState, history);
