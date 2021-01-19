@@ -8,7 +8,8 @@ module.exports = {
     '!**/themes/index.js',
     '!src/configureStore.js',
     '!src/reducers.js',
-    '!src/utils/history.js'
+    '!src/utils/history.js',
+    '!src/*/*/Loadable.{js,jsx}'
   ],
   coverageThreshold: {
     global: {

@@ -51,12 +51,12 @@ const normal = () => css`
 // styles
 const heading = () => css`
   ${large()}
-  ${bold()}
+  ${normal()}
 `;
 
 const subheading = () => css`
   ${big()}
-  ${bold()}
+  ${light()}
 `;
 
 const standard = () => css`

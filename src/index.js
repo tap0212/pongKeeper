@@ -5,7 +5,7 @@ import { ConnectedRouter } from 'connected-react-router';
 import { PersistGate } from 'redux-persist/integration/react';
 import history from './utils/history';
 
-import App from './containers/app/Loadable';
+import Keeper from './containers/Keeper/Loadable';
 import ErrorBoundary from './components/ErrorBoundary';
 
 import configureStore from './configureStore';
@@ -19,7 +19,7 @@ ReactDOM.render(
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <ConnectedRouter history={history}>
-          <App />
+          <Keeper />
         </ConnectedRouter>
       </PersistGate>
     </Provider>

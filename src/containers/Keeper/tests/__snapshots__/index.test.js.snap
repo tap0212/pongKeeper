@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Keeper /> container tests should render and match the snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-dlfnbm bFbQkn"
+    >
+      <div
+        class="sc-hKgILt RrfSS"
+      >
+        <p
+          class="sc-gKsewC iSQBEZ"
+        >
+          The Keeper
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;
